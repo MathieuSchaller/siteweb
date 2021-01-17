@@ -2,33 +2,41 @@
 
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Mathieu Schaller</title>
-  <meta name="description" content="Mathieu Schaller Personnal website">
-  <meta name="author" content="Mathieu Schaller">
+    <title>Mathieu Schaller</title>
+    <meta name="description" content="Mathieu Schaller Personnal website">
+    <meta name="author" content="Mathieu Schaller">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
 
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/navbar.js"></script>
 </head>
 
 <body>
     <nav id="navbar">
-
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Mathieu</a>
-            <div class="collapse navbar-collapse justify-content-md-center" id="navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#section-presentation">Présentation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#section-experiences">Expériences</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#section-skills">Compétences</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#section-extra">Extra-pro</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
-                </ul>
+        <div class="navbar-container"> 
+            <a class="navbar-brand" href="index.html">Mathieu Schaller</a>
+            <ul class="navbar-nav">
+                <button>☰</button>
+                <li class="nav-item nav-item-center"><a class="nav-link" href="#section-presentation">Présentation</a></li>
+                <li class="nav-item nav-item-center"><a class="nav-link" href="#section-experiences">Expériences</a></li>
+                <li class="nav-item nav-item-center"><a class="nav-link" href="#section-skills">Compétences</a></li>
+                <li class="nav-item nav-item-center"><a class="nav-link" href="#section-extra">Extra-pro</a></li>
+                <li class="nav-item nav-item-center"><a class="nav-link" href="#section-contact">Contact</a></li>
+                <li class="nav-item ul-lang-container">
+                    <a class="li-navbar-lang" href="index.html">FR</a>
+                    <a class="navbar-lang">-</a>
+                    <a class="li-navbar-lang" href="index.html">EN</a>
+                </li>
+            </ul>
+            <div class="navbar-lang-container">
+                <a class="navbar-lang" href="index.html">FR</a>
+                <a class="navbar-lang">-</a>
+                <a class="navbar-lang" href="index.html">EN</a>
             </div>
-            <a class="navbar-lang" href="index.html">FR</a>
-            <a class="navbar-lang">/</a>
-            <a class="navbar-lang" href="index.html">EN</a>
         </div>
     </nav>
 
@@ -80,6 +88,5 @@
             <p>footer</p>
         </div>
     </footer>
-    <script src="js/scripts.js"></script>
 </body>
 </html>

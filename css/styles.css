@@ -1,0 +1,206 @@
+/* -------------------------------------------------------------------------------------------- 
+
+                                                BODY
+
+-----------------------------------------------------------------------------------------------*/
+body {
+    margin: 0;
+    font-family: 'Comfortaa';
+    font-size: 100%;
+}
+
+/* -------------------------------------------------------------------------------------------- 
+
+                                                BODY
+
+-----------------------------------------------------------------------------------------------*/
+
+
+
+/* -------------------------------------------------------------------------------------------- 
+
+                                                NAVBAR
+
+-----------------------------------------------------------------------------------------------*/
+
+nav {
+    margin: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #3C3C3C;
+    color: #ffffff;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 4px 4px #0000004d;
+}
+
+nav div.navbar-container {
+    display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    nav div.navbar-lang-container {
+        font-size: 1rem;
+        font-weight: 300;
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: #cecece;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    nav li {
+        list-style-type: none;
+        margin: 0 0.8rem;
+        font-size: 1rem;
+        font-weight: 300;
+        white-space: nowrap;
+        color: #cecece;
+    }
+
+    nav a.nav-link:hover{
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    nav a.navbar-lang:hover{
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+
+    nav a.navbar-brand {
+        font-size: 1.4rem;
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    nav a,
+    nav a:visited,
+    nav a:hover,
+    nav a:active {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    nav li.ul-lang-container {
+        display: none;
+    }
+
+    nav button {
+        display: none;
+    }
+}
+
+
+
+/* smaller devices (phones/laptops, 1199px and under) */
+@media only screen and (max-width: 1199px) {
+
+
+    nav div.navbar-lang-container {
+        display: none;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-15 px);
+    }
+
+    nav li {
+        display: none;
+        list-style-type: none;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+        font-weight: 300;
+        white-space: nowrap;
+        color: #cecece;
+        background-color: #404040;
+        box-shadow: 0px 4px 4px #0000004d;
+    }
+
+    nav a.nav-link {
+        display: block;
+    }
+
+    nav a.nav-link:hover,
+    nav a.li-navbar-lang:hover {
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    nav a.navbar-brand {
+        font-size: 1.2rem;
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    nav a,
+    nav a:visited,
+    nav a:hover,
+    nav a:active {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    nav li.nav-item.ul-lang-container {
+        display: none;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    nav button {
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px #0000004d;
+        color: #ffffff;
+        height: 30px;
+        min-width: 30px;
+        /*makes the button visible*/
+        display: block;
+
+        /*since we are here, we can style it a little bit!*/
+        background-color: #404040;
+        border: none;
+
+        /*outline none removes the default blue border that appears anytime you click on the button*/
+        outline: none;
+
+        cursor: pointer;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------- 
+
+                                                NAVBAR
+
+-----------------------------------------------------------------------------------------------*/
