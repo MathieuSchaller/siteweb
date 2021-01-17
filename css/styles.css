@@ -7,7 +7,13 @@ body {
     margin: 0;
     font-family: 'Comfortaa';
     font-size: 100%;
+    overflow: hidden;
 }
+
+.main {
+    margin-top: 50px;
+    overflow: scroll;
+  }
 
 /* -------------------------------------------------------------------------------------------- 
 
@@ -78,12 +84,12 @@ nav div.navbar-container {
         color: #cecece;
     }
 
-    nav a.nav-link:hover{
+    nav a.nav-link:hover {
         font-weight: 700;
         color: #ffffff;
     }
 
-    nav a.navbar-lang:hover{
+    nav a.navbar-lang:hover {
         font-weight: 700;
         color: #ffffff;
     }
@@ -134,7 +140,7 @@ nav div.navbar-container {
         position: absolute;
         top: 50%;
         right: 1rem;
-        transform: translateY(-15 px);
+        transform: translateY(-15px);
     }
 
     nav li {

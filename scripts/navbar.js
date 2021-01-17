@@ -15,6 +15,9 @@ $(document).ready(function () {
             });
             $("nav li").hide();
         }
+        //get window height minus 50 pixels for the headers height
+        var height = $(window).height() - 50;
+        $(".main").height(height);
     }
 
     if (window.innerWidth < 1200) {
@@ -23,6 +26,10 @@ $(document).ready(function () {
             'border-radius': '5px'
         });
     }
+
+    //get window height minus 50 pixels for the headers height
+    var height = $(window).height() - 50;
+    $(".main").height(height);
 
     // Attaching the event listener function to window's resize event
     window.addEventListener("resize", adaptNavbar);
