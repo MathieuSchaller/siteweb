@@ -16,7 +16,7 @@ $(document).ready(function () {
             $("nav li").hide();
         }
         //get window height minus 50 pixels for the headers height
-        var height = $(window).height() - 50;
+        var height = $(window).height();
         $(".main").height(height);
     }
 
@@ -28,7 +28,7 @@ $(document).ready(function () {
     }
 
     //get window height minus 50 pixels for the headers height
-    var height = $(window).height() - 50;
+    var height = $(window).height();
     $(".main").height(height);
 
     // Attaching the event listener function to window's resize event

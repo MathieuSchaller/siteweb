@@ -3,16 +3,21 @@
                                                 BODY
 
 -----------------------------------------------------------------------------------------------*/
+html {
+    display:block;
+}
+
 body {
     margin: 0;
     font-family: 'Comfortaa';
     font-size: 100%;
     overflow: hidden;
+    min-width: 240px;
 }
 
 .main {
-    margin-top: 50px;
-    overflow: scroll;
+    margin: 0;
+    overflow-y: scroll;
   }
 
 /* -------------------------------------------------------------------------------------------- 
@@ -51,7 +56,7 @@ nav div.navbar-container {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media all and (min-width: 1200px) {
 
     nav div.navbar-lang-container {
         font-size: 1rem;
@@ -84,16 +89,12 @@ nav div.navbar-container {
         color: #cecece;
     }
 
-    nav a.nav-link:hover {
+    nav a.navbar-lang:hover,
+    nav a.nav-link:hover,
+    nav a:active {
         font-weight: 700;
         color: #ffffff;
     }
-
-    nav a.navbar-lang:hover {
-        font-weight: 700;
-        color: #ffffff;
-    }
-
 
     nav a.navbar-brand {
         font-size: 1.4rem;
@@ -125,7 +126,7 @@ nav div.navbar-container {
 
 
 /* smaller devices (phones/laptops, 1199px and under) */
-@media only screen and (max-width: 1199px) {
+@media all and (max-width: 1199px) {
 
 
     nav div.navbar-lang-container {
@@ -160,7 +161,8 @@ nav div.navbar-container {
     }
 
     nav a.nav-link:hover,
-    nav a.li-navbar-lang:hover {
+    nav a.li-navbar-lang:hover,
+    nav a:active {
         font-weight: 700;
         color: #ffffff;
     }
@@ -177,8 +179,7 @@ nav div.navbar-container {
 
     nav a,
     nav a:visited,
-    nav a:hover,
-    nav a:active {
+    nav a:hover {
         text-decoration: none;
         color: inherit;
     }
@@ -213,3 +214,84 @@ nav div.navbar-container {
                                                 NAVBAR
 
 -----------------------------------------------------------------------------------------------*/
+
+
+/* -------------------------------------------------------------------------------------------- 
+
+                                             HERO SECTION
+
+-----------------------------------------------------------------------------------------------*/
+
+#section-hero{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    background-image:url("../img/hero.png");
+    background-color: #3c3c3c      ;
+    height: 98vh;
+    max-height: 200vw;
+
+    color: rgb(226, 226, 226);
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 4px 4px #0000004d;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section-hero h1{
+    white-space: nowrap;
+    padding-left: 10vw;
+    padding-top: 10vh;
+    line-height: 150%;
+    margin: 0%;
+    align-items: center;
+    letter-spacing: -0.015em;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px  #3c3c3c  ;
+}
+#section-hero h1 span{
+    color: white;
+    font-weight: 700;
+}
+
+#section-hero p{
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: auto;
+    margin-bottom: 15px;
+    bottom: 7%;
+}
+
+#section-hero a{
+    position: relative;
+    bottom: 7%;
+    align-content: center;
+    left: 50%;
+}
+
+@media all and (min-width: 500px) {
+    #section-hero img{
+        height: 60px;
+        width: 60px;
+        transform: translateX(-50%);
+    }
+}
+
+@media all and (max-width: 499px) {
+    #section-hero img{
+        height: 40px;
+        width: 40px;
+        transform: translateX(-50%);
+    }
+}
+/* -------------------------------------------------------------------------------------------- 
+
+                                             HERO SECTION
+
+-----------------------------------------------------------------------------------------------*/
+
